@@ -1,0 +1,13 @@
+* rms2_choco
+
+A collection of cmd and powershell scripts in order to
+
+- install chocolatey https://chocolatey.org/
+- install software
+  - based on a preset
+  - based on a config-file named like the hostname
+- update software
+- log the installed software
+
+  
+  
