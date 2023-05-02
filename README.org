@@ -11,10 +11,13 @@ A collection of cmd and powershell scripts in order to
 
   
 ** Installation
-1) Just copy the file to =C:\Admin\rms2_choco\= in order to have working lnk-files
+You decide: Option 1a by hany oder 1b auto setup
+1a) Just copy the file to =C:\Admin\rms2_choco\= in order to have working lnk-files
    - Software-Installation.lnk
    - Software-Update.lnk
    or use any other place and update or recreate the lnk-files.
+1b) Envoke script directly:
+    ~powershell -exec bypass -c "(New-Object Net.WebClient);iwr('https://raw.githubusercontent.com/de-ramon/rms2_choco/master/rms2_choco_dl.ps1')|iex"~
 
 2) Send the lnk-file to the desktop
    - Senden an > Desktop (Verknüpfung erstellen)
