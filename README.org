@@ -11,26 +11,28 @@ A collection of cmd and powershell scripts in order to
 
   
 ** Installation
-You decide: Option a) manual or b) script-based setup
+You decide: Manual or script-based setup
 
-a) Just copy the file to =C:\Admin\rms2_choco\= in order to have working lnk-files
+*** Manual setup
+Just copy the file to =C:\Admin\rms2_choco\= in order to have working lnk-files
    - Software-Installation.lnk
    - Software-Update.lnk
-   or use any other place and update or recreate the lnk-files.
+or use any other place and update or recreate the lnk-files.
 
-b) Envoke script directly:
+After that just copy or send the lnk-file to the desktop
+   - Senden an > Desktop (Verknüpfung erstellen)
+   - Send To > Desktop (Create shortcut)
+
+*** Script based setup
 #+begin_src
     powershell -exec bypass -c "(New-Object Net.WebClient);iwr('https://raw.githubusercontent.com/de-ramon/rms2_choco/master/rms2_choco_dl.ps1')|iex"
 #+end_src
-
-After that just send the lnk-file to the desktop
-   - Senden an > Desktop (Verknüpfung erstellen)
-   - Send To > Desktop (Create shortcut)
 
 ** Using the scripts
 *** choco_setup.bat
 - Installs chocolatey unattended if not present
 - Start update or install preset
+
 #+begin_src 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
